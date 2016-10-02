@@ -4,8 +4,7 @@ class Book
       name = name.split(" ")
       name[0].capitalize!
       name.each do |word|
-         little_words = ['a','an','the','at','by','for','in','of','on','to','up',
-   		'and','as','but','it','or','nor','over']
+         little_words = %w(a an the at by for in of on to up and as but it or over)
          if little_words.include? word
             word
          else
